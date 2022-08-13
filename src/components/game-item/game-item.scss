@@ -1,0 +1,50 @@
+.game-item {
+  color: #fff;
+  flex: 0 1 27.11%;
+  height: 300px;
+  background: rgb(36, 37, 41);
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  @media (max-width: 890px) {
+    flex: 0 1 46%;
+  }
+  @media (max-width: 650px) {
+    flex: 0 1 100%;
+  }
+  .game-item__details {
+    padding: 10px 20px;
+
+    .game-item__title {
+      font-size: 18px;
+      font-weight: bold;
+      @media (max-width: 650px) {
+        font-size: 28px;
+      }
+      @media (max-width: 450px) {
+        font-size: 18px;
+      }
+    }
+    .game-item__genres {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .game-item__genres > * {
+      margin-bottom: 5px;
+    }
+    .game-item__buy {
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+    }
+  }
+}
+
+.game-item:not(:last-child) {
+  margin-bottom: 30px;
+  margin-right: 50px;
+  @media (max-width: 890px) {
+    margin-right: 0;
+  }
+}

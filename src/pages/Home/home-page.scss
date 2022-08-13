@@ -1,0 +1,7 @@
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 890px) {
+    justify-content: space-between;
+  }
+}
