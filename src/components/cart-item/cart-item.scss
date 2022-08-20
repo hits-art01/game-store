@@ -7,4 +7,10 @@
 
 .cart-item__price {
   font-weight: 500;
+  span {
+    margin-right: 10px;
+  }
+  .icon {
+    margin-bottom: -3px;
+  }
 }

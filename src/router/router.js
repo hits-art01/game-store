@@ -1,8 +1,9 @@
-import HomePage from "../pages/Home/HomePage";
+import GamePage from "../pages/game-page/GamePage";
+import HomePage from "../pages/home-page/HomePage";
+import OrderPage from "../pages/order-page/OrderPage";
 
 export const publickRoutes = [
   { path: "*", element: <HomePage /> },
-  // { path: "/posts", element: <Posts /> },
-  // { path: "/weather", element: <Weather /> },
-  // { path: "*", element: <Posts /> },
+  { path: "/app/:title", element: <GamePage /> },
+  { path: "/order", element: <OrderPage /> },
 ];
