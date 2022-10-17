@@ -6,7 +6,7 @@ import GameGenres from "../../components/game-genres/GameGenres";
 import "./game-page.scss";
 
 const GamePage = () => {
-  const game = useSelector((state) => state.game.currentGame);
+  const game = useSelector((state) => state.games.currentGame);
   if (!game) return null;
   return (
     <div className="game-page">

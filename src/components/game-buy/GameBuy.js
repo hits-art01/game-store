@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteItemFromCart, setItemInCart } from "../../redux/cart/reducer";
+import { deleteItemFromCart, setItemInCart } from "../../redux/actions";
+
 import Button from "../button/Button";
 import "./game-buy.scss";
 

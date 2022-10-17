@@ -1,8 +1,9 @@
 import React from "react";
 import "./cart-item.scss";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { deleteItemFromCart } from "../../redux/cart/reducer";
+
 import { useDispatch } from "react-redux";
+import { deleteItemFromCart } from "../../redux/actions";
 
 const CartItem = ({ title, price, id }) => {
   const dispatch = useDispatch();

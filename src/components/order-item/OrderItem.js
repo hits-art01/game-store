@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import GameCover from "../game-cover/GameCover";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import "./order-item.scss";
-import { deleteItemFromCart } from "../../redux/cart/reducer";
+import { deleteItemFromCart } from "../../redux/actions";
 
 const OrderItem = ({ game }) => {
   const dispatch = useDispatch();

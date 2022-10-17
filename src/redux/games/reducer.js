@@ -1,16 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { SET_CURRENT_GAME } from "../types";
 
-const gamesSlice = createSlice({
-  name: "games",
-  initialState: {
-    currentGame: null,
-  },
-  reducers: {
-    setCurrentGame: (state, action) => {
-      state.currentGame = action.payload;
-    },
-  },
-});
+const initialState = {
+  currentGame: null,
+};
 
-export const { setCurrentGame } = gamesSlice.actions;
-export default gamesSlice.reducer;
+export const gamesReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SET_CURRENT_GAME:
+      return {
+        ...state,
+        currentGame: (state.currentGame = action.payload),
+      };
+    default:
+      return state;
+  }
+};

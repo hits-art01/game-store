@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { setCurrentGame } from "../../redux/games/reducer";
+import { setCurrentGame } from "../../redux/actions";
 import GameBuy from "../game-buy/GameBuy";
 import GameCover from "../game-cover/GameCover";
 import GameGenres from "../game-genres/GameGenres";
